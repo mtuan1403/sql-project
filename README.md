@@ -1,43 +1,20 @@
-# SQL + Python Portfolio Project
+# SQL + Python Portfolio
 
-This repository showcases practical SQL and Python skills for data analysis, reporting, and workflow automation.  
-It is designed as a focused portfolio project to demonstrate how I solve real data problems end-to-end.
+This repository is intentionally refined to showcase my practical SQL and Python skills in a clean, review-friendly format.
 
-## What This Project Demonstrates
+## Project Focus
 
-- Strong SQL fundamentals: joins, aggregations, CTEs, subqueries, window functions
-- Data cleaning and validation workflows
-- Analytical query design for business reporting
-- Python automation for running queries and exporting results
-- Reproducible, readable, and production-minded code practices
+- SQL schema design and relational modeling
+- Advanced analysis queries (joins, CTEs, aggregations, window functions)
+- Data-quality validation queries
+- Python automation for query execution and CSV reporting
 
-## Core Skills Highlighted
-
-### SQL Skills
-
-- Schema design and relational modeling
-- Complex joins (`INNER`, `LEFT`, multi-table joins)
-- Grouping and aggregation (`GROUP BY`, `HAVING`)
-- Common table expressions (CTEs) for readable query pipelines
-- Window functions (`ROW_NUMBER`, `RANK`, running totals, partitions)
-- Data quality checks and anomaly detection queries
-- Performance awareness (`EXPLAIN`, indexing strategy basics)
-
-### Python Skills
-
-- Database connectivity and query execution
-- Data transformation and cleaning with Python
-- Automated report generation and CSV exports
-- Script organization for maintainability and reuse
-- Error handling and logging for reliable workflows
-
-## Suggested Repository Structure
-
-As this portfolio grows, files can be organized like this:
+## Repository Structure
 
 ```text
 sql-project/
   README.md
+  .gitignore
   sql/
     schema.sql
     seed_data.sql
@@ -47,45 +24,46 @@ sql-project/
     run_analysis.py
     export_reports.py
   outputs/
-    sample_report.csv
 ```
 
-## Example Business Questions Solved
+## Why This Is Portfolio-Ready
 
-- Which customers generate the highest lifetime revenue?
-- What are monthly sales trends and seasonality patterns?
-- Which products are frequently purchased together?
-- Which records fail quality checks and need remediation?
-- What are the top risk indicators based on historical behavior?
+- **Organized:** clear separation of SQL logic and Python automation
+- **Relevant:** only code that demonstrates SQL + Python capability
+- **Reproducible:** one command pipeline to build DB, run analysis, export results
+- **Reviewable:** concise scripts and purpose-driven SQL files
 
-## How To Run (Planned Workflow)
+## SQL Skills Demonstrated
 
-1. Set up a SQL database (PostgreSQL/MySQL/SQLite).
-2. Execute schema and seed scripts from the `sql/` folder.
-3. Run analysis queries to generate insight tables.
-4. Use Python scripts to automate report extraction and export.
+- Multi-table joins across transactional entities
+- CTE-driven query structuring
+- Aggregation for reporting and KPI extraction
+- Window functions for ranking and trend analysis
+- Validation rules for anomaly and quality checks
 
-## Why This Project Matters
+## Python Skills Demonstrated
 
-This project highlights not just SQL syntax knowledge, but practical analytical thinking:
+- Programmatic database initialization
+- Query orchestration from SQL files
+- Result serialization to CSV
+- File/path management and safe script structure
 
-- translating business questions into precise queries
-- validating and cleaning messy data
-- automating repeatable workflows with Python
-- producing clear, stakeholder-ready outputs
+## Quick Start
 
-## Next Improvements
+Run from project root:
 
-- Add benchmark queries with execution plan notes
-- Include before/after query optimization examples
-- Add unit tests for Python data-processing logic
-- Publish sample dashboard-ready output files
+```bash
+python3 python/run_analysis.py
+python3 python/export_reports.py
+```
 
-## Contact
+Generated outputs:
 
-If you are reviewing this for opportunities, I am happy to walk through:
+- `outputs/analysis_results.csv`
+- `outputs/data_quality_results.csv`
 
-- query design decisions
-- optimization trade-offs
-- how Python supports scalable SQL workflows
+## Notes
+
+- Current scripts use SQLite for easy local execution and portfolio portability.
+- SQL style is PostgreSQL-compatible with minor syntax adjustments where needed.
 
